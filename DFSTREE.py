@@ -32,16 +32,28 @@ def postorder(root):
 
 # Create Binary Tree
 root = Node("R")
+
 root.left = Node("E")
-root.right = Node("N")
+root.right = Node("H")
 
 root.left.left = Node("Y")
 root.left.right = Node("M")
-root.right.left = Node("O")
+
+root.right.left = Node("E")
+root.right.right = Node("R")
+
+root.left.left.left = Node("O")
+root.left.left.right = Node("N")
+
+root.left.right.left = Node("A")
+root.left.right.right = Node("N")
+
+root.right.left.left = Node("A")
+root.right.right.left = Node("N")
 
 
 # Display Results
-print("Name: REYMON")
+print("Name: REYMON HERNAN")
 
 print("\nPreorder:")
 preorder(root)
